@@ -87,7 +87,7 @@ describe 'Running Jukebox' do
         it 'can take a song name as an argument' do
           jukebox.stub(:gets).and_return('play Phoenix - 1901', 'exit')
           play_with_song_num_output = capture_stdout { jukebox.call }
-          expect(play_with_song_num_output).to match(/Now Playing: Phoenix - 1901/)
+          expect(play_with_song_num_output).to match(/Now Playing:  Phoenix - 1901/)
         end
       end
     end
