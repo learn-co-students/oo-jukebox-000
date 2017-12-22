@@ -17,7 +17,6 @@ class Jukebox
   end
 
   def do_command
-      get_input
       if @input == "help"
         help
       elsif @input == "list"
@@ -55,7 +54,7 @@ class Jukebox
     input = get_input
     while input != "exit"
       do_command
-    end 
+    end
   end
 
 end
