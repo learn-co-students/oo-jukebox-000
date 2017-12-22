@@ -51,7 +51,11 @@ class Jukebox
 
 
   def call
-    @songs
+    "Welcome to the Jukebox! Type 'help' to see the list of available commands"
+    input = get_input
+    while input != "exit"
+      do_command
+    end 
   end
 
 end
